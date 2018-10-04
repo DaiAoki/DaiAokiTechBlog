@@ -2,7 +2,8 @@
 
 ## ローカルの不要なブランチを消去するシェルスクリプト
 `git branch -D` で消すこともできるが、面倒。 `brd` でインタラクティブに削除できるようにした。  
-```
+
+```bash
 brd() {
     git branch | while read line
     do
